@@ -104,7 +104,7 @@ const option = {
           draggable: true,
         },
         {
-          name: '赵英杰',
+          name: '赵英杰21',
           category: 1,
           draggable: true,
         },
