@@ -4,9 +4,7 @@
  */
 import Loadable from 'react-loadable';
 import Loading from './widget/Loading';
-import BasicTable from './tables/BasicTables';
 import AdvancedTable from './tables/AdvancedTables';
-import AsynchronousTable from './tables/AsynchronousTable';
 import Echarts from './charts/Echarts';
 import Recharts from './charts/Recharts';
 import Banners from './ui/banners';
@@ -21,8 +19,6 @@ import MapUi from './ui/map';
 import QueryParams from './extension/QueryParams';
 import Visitor from './extension/Visitor';
 import MultipleMenu from './extension/MultipleMenu';
-import Sub1 from './smenu/Sub1';
-import Sub2 from './smenu/Sub2';
 import Env from './env';
 
 const WysiwygBundle = Loadable({
@@ -32,9 +28,7 @@ const WysiwygBundle = Loadable({
 });
 
 export default {
-  BasicTable,
   AdvancedTable,
-  AsynchronousTable,
   Echarts,
   Recharts,
   Banners,
@@ -50,7 +44,5 @@ export default {
   QueryParams,
   Visitor,
   MultipleMenu,
-  Sub1,
-  Sub2,
   Env,
 } as any;
