@@ -12,7 +12,6 @@ import Recharts from './charts/Recharts';
 import Banners from './ui/banners';
 import Drags from './ui/Draggable';
 import Dashboard from './dashboard/Dashboard';
-import Gallery from './ui/Gallery';
 import BasicAnimations from './animation/BasicAnimations';
 import ExampleAnimations from './animation/ExampleAnimations';
 import AuthBasic from './auth/Basic';
@@ -41,7 +40,6 @@ export default {
   Banners,
   Drags,
   Dashboard,
-  Gallery,
   BasicAnimations,
   ExampleAnimations,
   AuthBasic,
