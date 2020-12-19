@@ -32,7 +32,6 @@ const menus: {
       title: 'UI',
       icon: 'scan',
       subs: [
-        { key: '/app/ui/tabs', title: '标签页', component: 'Tabs' },
         { key: '/app/ui/banners', title: '轮播图', component: 'Banners' },
         { key: '/app/ui/wysiwyg', title: '富文本', component: 'WysiwygBundle' },
         { key: '/app/ui/drags', title: '拖拽', component: 'Drags' },

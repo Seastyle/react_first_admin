@@ -9,7 +9,6 @@ import AdvancedTable from './tables/AdvancedTables';
 import AsynchronousTable from './tables/AsynchronousTable';
 import Echarts from './charts/Echarts';
 import Recharts from './charts/Recharts';
-import Tabs from './ui/Tabs';
 import Banners from './ui/banners';
 import Drags from './ui/Draggable';
 import Dashboard from './dashboard/Dashboard';
@@ -39,7 +38,6 @@ export default {
   AsynchronousTable,
   Echarts,
   Recharts,
-  Tabs,
   Banners,
   Drags,
   Dashboard,
