@@ -9,9 +9,6 @@ import AdvancedTable from './tables/AdvancedTables';
 import AsynchronousTable from './tables/AsynchronousTable';
 import Echarts from './charts/Echarts';
 import Recharts from './charts/Recharts';
-import Spins from './ui/Spins';
-import Modals from './ui/Modals';
-import Notifications from './ui/Notifications';
 import Tabs from './ui/Tabs';
 import Banners from './ui/banners';
 import Drags from './ui/Draggable';
@@ -42,9 +39,6 @@ export default {
   AsynchronousTable,
   Echarts,
   Recharts,
-  Spins,
-  Modals,
-  Notifications,
   Tabs,
   Banners,
   Drags,
