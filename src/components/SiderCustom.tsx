@@ -3,7 +3,6 @@ import { Layout } from 'antd';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import routes from '../routes/config';
 import SiderMenu from './SiderMenu';
-import { useAlita } from 'redux-alita';
 import { useSwitch } from '../utils/hooks';
 import { usePrevious } from 'ahooks';
 const { Sider } = Layout;
@@ -11,7 +10,6 @@ const { Sider } = Layout;
 type SiderCustomProps = RouteComponentProps<any> & {
   popoverHide?: () => void;
   collapsed?: boolean;
-  smenus?: any;
 };
 interface IMenu {
   openKeys: string[];
@@ -22,8 +20,6 @@ const SiderCustom = (props: SiderCustomProps) => {
   const [collapsed, tCollapsed] = useSwitch();
   const [firstHide, tFirstHide] = useSwitch();
   const [menu, setMenu] = useState<IMenu>({ openKeys: [''], selectedKey: '' });
-  // 异步菜单
-  const [smenus] = useAlita({ smenus: [] }, { light: true });
   const { location, collapsed: pCollapsed } = props;
   const prePathname = usePrevious(props.location.pathname);
 
@@ -78,7 +74,7 @@ const SiderCustom = (props: SiderCustomProps) => {
     >
       <div className="logo" />
       <SiderMenu
-        menus={[...routes.menus, ...smenus]}
+        menus={[...routes.menus]}
         onClick={menuClick}
         mode="inline"
         selectedKeys={[menu.selectedKey]}
