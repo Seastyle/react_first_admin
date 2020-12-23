@@ -7,7 +7,6 @@ import SiderCustom from './components/SiderCustom';
 import HeaderCustom from './components/HeaderCustom';
 import { ThemePicker, Copyright } from './components/widget';
 import { checkLogin } from './utils';
-import { fetchMenu } from './service';
 import classNames from 'classnames';
 import { SmileOutlined } from '@ant-design/icons';
 

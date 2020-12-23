@@ -22,6 +22,12 @@ const menus: {
   menus: [
     // 菜单相关路由
     {
+      key: '/app/test',
+      title: '测试',
+      icon: 'mobile',
+      subs: [{ key: '/app/test/Test', title: '测试', component: 'Test' }],
+    },
+    {
       key: '/app/dashboard/index',
       title: '首页',
       icon: 'mobile',
@@ -35,7 +41,6 @@ const menus: {
         { key: '/app/ui/banners', title: '轮播图', component: 'Banners' },
         { key: '/app/ui/wysiwyg', title: '富文本', component: 'WysiwygBundle' },
         { key: '/app/ui/drags', title: '拖拽', component: 'Drags' },
-        { key: '/app/ui/map', title: '地图', component: 'MapUi' },
       ],
     },
     {
@@ -47,11 +52,6 @@ const menus: {
           key: '/app/animation/basicAnimations',
           title: '基础动画',
           component: 'BasicAnimations',
-        },
-        {
-          key: '/app/animation/exampleAnimations',
-          title: '动画案例',
-          component: 'ExampleAnimations',
         },
       ],
     },
@@ -98,12 +98,6 @@ const menus: {
           requireAuth: 'auth/testPage',
         },
       ],
-    },
-    {
-      key: '/app/cssModule',
-      title: 'cssModule',
-      icon: 'star',
-      component: 'Cssmodule',
     },
     {
       key: '/app/extension',

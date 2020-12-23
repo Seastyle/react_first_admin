@@ -11,15 +11,13 @@ import Banners from './ui/banners';
 import Drags from './ui/Draggable';
 import Dashboard from './dashboard/Dashboard';
 import BasicAnimations from './animation/BasicAnimations';
-import ExampleAnimations from './animation/ExampleAnimations';
 import AuthBasic from './auth/Basic';
 import RouterEnter from './auth/RouterEnter';
-import Cssmodule from './cssmodule';
-import MapUi from './ui/map';
 import QueryParams from './extension/QueryParams';
 import Visitor from './extension/Visitor';
 import MultipleMenu from './extension/MultipleMenu';
 import Env from './env';
+import Test from './test/Test';
 
 const WysiwygBundle = Loadable({
   // 按需加载富文本配置
@@ -35,14 +33,12 @@ export default {
   Drags,
   Dashboard,
   BasicAnimations,
-  ExampleAnimations,
   AuthBasic,
   RouterEnter,
   WysiwygBundle,
-  Cssmodule,
-  MapUi,
   QueryParams,
   Visitor,
   MultipleMenu,
   Env,
+  Test,
 } as any;
